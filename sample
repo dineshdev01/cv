@@ -1,3 +1,4 @@
+
 <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'
     style='background-color: white;color: black;max-width: 600px;'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -14,41 +15,23 @@
         <input type='text' style='display:none;' name='returnURL'
             value='https&#x3a;&#x2f;&#x2f;dineshdev01.github.io&#x2f;cv&#x2f;'> </input>
         <!-- Do not remove this code. -->
-        <div class='zcwf_title' style='max-width: 600px;color: black; font-family:Arial;'>contact</div>
-        <div class='zcwf_row'>
-            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Last_Name'>Name<span
-                        style='color:red;'>*</span></label></div>
-            <div class='zcwf_col_fld'><input type='text' id='Last_Name' name='Last Name' maxlength='80'></input>
-                <div class='zcwf_col_help'></div>
+            <div class="fields">
+                <div class="field name">
+                    <input type='text' id='Last_Name' name='Last Name' maxlength='80' placeholder="Name" required>  
+                </div>
+                <div class="field email">
+                    <input type='text' ftype='email' id='Email' name='Email' maxlength='100' placeholder="Email" required>
+                </div>
             </div>
-        </div>
-        <div class='zcwf_row'>
-            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Email'>Email<span
-                        style='color:red;'>*</span></label></div>
-            <div class='zcwf_col_fld'><input type='text' ftype='email' id='Email' name='Email' maxlength='100'></input>
-                <div class='zcwf_col_help'></div>
+            <div class="field">
+                <input type='text' id='Title' name='Title' maxlength='100'placeholder="Subject" required>
             </div>
-        </div>
-        <div class='zcwf_row'>
-            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Title'>Subject<span
-                        style='color:red;'>*</span></label></div>
-            <div class='zcwf_col_fld'><input type='text' id='Title' name='Title' maxlength='100'></input>
-                <div class='zcwf_col_help'></div>
+            <div class="field textarea">
+                <textarea id='Description' name='Description' placeholder="Message.." required></textarea>
             </div>
-        </div>
-        <div class='zcwf_row'>
-            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Description'>Message<span
-                        style='color:red;'>*</span></label></div>
-            <div class='zcwf_col_fld'><textarea id='Description' name='Description'></textarea>
-                <div class='zcwf_col_help'></div>
+            <div class="button-area">
+                <button type="submit" id='formsubmit' class='formsubmit zcwf_button' title='Submit'>Send message</button>
             </div>
-        </div>
-        <div class='zcwf_row'>
-            <div class='zcwf_col_lab'></div>
-            <div class='zcwf_col_fld'><input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit'
-                    title='Submit'><input type='reset' class='zcwf_button' name='reset' value='Reset' title='Reset'>
-            </div>
-        </div>
         <script>
             function validateEmail488773000000352001() {
                 var form = document.forms['WebToContacts488773000000352001'];
